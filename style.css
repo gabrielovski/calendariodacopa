@@ -37,6 +37,14 @@ header {
   gap: 32px;
 }
 
+.nome-times {
+  display: flex;
+  justify-content: space-between;
+  color: #e1e1e6;
+  font-size: 7px;
+  text-transform: capitalize;
+}
+
 .card {
   padding: 32px 23px;
   text-align: center;
