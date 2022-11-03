@@ -27,7 +27,7 @@ function createCard(date, day, games) {
 
 document.querySelector("#app").innerHTML = `
   <header>
-    <img src="./assets/logo.svg" alt="Logo da NLW" />
+    <img src="./assets/copalogo.png" alt="Logo da Copa do Mundo 2022" />
   </header>
   <main id="cards">
   ${createCard("20/11", "domingo", createGame("qatar", "13:00", "ecuador"))}

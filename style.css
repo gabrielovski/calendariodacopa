@@ -30,6 +30,10 @@ header {
   text-align: center;
 }
 
+header img {
+  width: 185px;
+}
+
 #cards {
   display: flex;
   flex-direction: row;
