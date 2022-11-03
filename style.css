@@ -102,7 +102,7 @@ header img {
   height: 50px;
 }
 
-.card ul li + li {
+.card ul div + li {
   padding-top: 24px;
   border-top: 1px solid #323238;
 }
