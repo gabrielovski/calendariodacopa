@@ -4,15 +4,37 @@
   box-sizing: border-box;
 }
 
+:root {
+  --card-title-border-color: #746615;
+  --card-color-primary: #f7dd43;
+  --card-bg-color: #1d1c19;
+  --bg: url(./assets/bg-yellow.svg);
+}
+
+body.blue {
+  --card-title-border-color: #338af3;
+  --card-color-primary: #338af3;
+  --card-bg-color: #202024;
+  --bg: url(./assets/bg-blue.svg);
+}
+
+body.green {
+  --card-title-border-color: #047c3f;
+  --card-color-primary: #047c3f;
+  --card-bg-color: #1a1f1b;
+  --bg: url(./assets/bg-green.svg);
+}
+
 ul {
   list-style: none;
 }
 
 body {
   background-color: #121214;
-  background-image: url(./assets/bg.svg);
-  background-position-x: center;
-  background-position-y: -715px;
+  background-image: var(--bg);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 
 body * {
@@ -21,8 +43,8 @@ body * {
 
 #app {
   width: fit-content;
-  margin: 52px auto;
-  max-width: 1400px;
+  margin: auto;
+  padding-top: 52px;
 }
 
 header {
@@ -31,13 +53,13 @@ header {
 }
 
 header img {
-  width: 185px;
+  width: 175px;
+  animation: apeear 1.05s forwards;
 }
 
 #cards {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
   gap: 32px;
 }
@@ -55,8 +77,8 @@ header img {
   text-align: center;
   height: fit-content;
 
-  background: #1d1c19;
-  border-bottom: 2px solid #f7dd43;
+  background: var(--card-bg-color);
+  border-bottom: 2px solid var(--card-color-primary);
   border-radius: 6px;
 }
 
@@ -67,7 +89,7 @@ header img {
   align-items: center;
 
   padding: 8px 16px;
-  border: 1px solid #746615;
+  border: 1px solid var(--card-title-border-color);
   border-radius: 6px;
 
   width: fit-content;
@@ -113,4 +135,44 @@ header img {
   line-height: 125%;
 
   color: #e1e1e6;
+}
+
+#app img:hover,
+.nome-times h1:hover,
+.card h2:hover,
+.card ul li strong:hover,
+.card ul li img:hover {
+  transform: scale(1.1);
+}
+
+#app img,
+.nome-times h1,
+.card h2,
+.card ul li strong,
+.card ul li img {
+  transition: transform 0.3s;
+}
+
+.card {
+  animation: apeear 1.5s forwards;
+}
+
+@keyframes apeear {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@media (min-width: 700px) {
+  #cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 1200px;
+  }
 }
