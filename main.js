@@ -14,6 +14,22 @@ function createGame(player1, hour, player2) {
   `
 }
 
+document.getElementById("botao").onclick = function () {
+  var body = document.getElementsByTagName("body")[0]
+  var color = body.getAttribute("class")
+
+  if (color === "yellow") {
+    body.classList.remove("yellow")
+    body.classList.add("blue")
+  } else if (color === "blue") {
+    body.classList.remove("blue")
+    body.classList.add("green")
+  } else if (color === "green") {
+    body.classList.remove("green")
+    body.classList.add("yellow")
+  }
+}
+
 let delay = -0.15
 function createCard(date, day, games) {
   delay = delay + 0.15

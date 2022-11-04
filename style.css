@@ -5,21 +5,24 @@
 }
 
 :root {
-  --card-title-border-color: #746615;
-  --card-color-primary: #f7dd43;
-  --card-bg-color: #1d1c19;
-}
-
-body.blue {
   --card-title-border-color: #338af3;
   --card-color-primary: #338af3;
   --card-bg-color: #202024;
+  --bg-color: linear-gradient(to top, #141827 40%, #031730);
+}
+
+body.yellow {
+  --card-title-border-color: #746615;
+  --card-color-primary: #f7dd43;
+  --card-bg-color: #1d1c19;
+  --bg-color: linear-gradient(to top, #2a2a1e 40%, #1e3100);
 }
 
 body.green {
   --card-title-border-color: #047c3f;
   --card-color-primary: #047c3f;
   --card-bg-color: #1a1f1b;
+  --bg-color: linear-gradient(to top, #1c2a26 40%, #103126);
 }
 
 ul {
@@ -27,7 +30,7 @@ ul {
 }
 
 body {
-  background-color: #121214;
+  background-image: var(--bg-color);
 }
 
 body * {
@@ -41,13 +44,39 @@ body * {
 }
 
 header {
-  margin-bottom: 63px;
+  margin-bottom: 53px;
   text-align: center;
 }
 
 header img {
   width: 175px;
   animation: apeear 1.6s forwards;
+}
+
+.div-botao {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+  animation: apeear 1.6s forwards;
+}
+
+#botao {
+  height: 45px;
+  width: 140px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  background-color: #fff;
+  border-style: none;
+  box-shadow: #00000033 0 3px 5px -1px, #00000024 0 6px 10px 0,
+    #0000001f 0 1px 18px 0;
+  box-sizing: border-box;
+  color: #121214;
+}
+
+.botao:hover {
+  background: #f6f9fe;
+  color: #121214;
 }
 
 #cards {
@@ -130,7 +159,7 @@ header img {
   color: #e1e1e6;
 }
 
-#app img:hover,
+#botao:hover,
 .nome-times h1:hover,
 .card h2:hover,
 .card ul li strong:hover,
@@ -138,7 +167,7 @@ header img {
   transform: scale(1.1);
 }
 
-#app img,
+#botao,
 .nome-times h1,
 .card h2,
 .card ul li strong,
@@ -147,7 +176,7 @@ header img {
 }
 
 .card {
-  animation: apeear 1.5s forwards;
+  animation: apeear 1.4s forwards;
 }
 
 @keyframes apeear {
