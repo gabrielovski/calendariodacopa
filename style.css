@@ -8,25 +8,21 @@
   --card-title-border-color: #338af3;
   --card-color-primary: #338af3;
   --card-bg-color: #202024;
-  --bg-color: linear-gradient(to top, #141827 40%, #031730);
+  --bg-color: radial-gradient(circle, #12498c 0.1%, #1e1e1e 100%);
 }
 
 body.yellow {
   --card-title-border-color: #746615;
   --card-color-primary: #f7dd43;
   --card-bg-color: #1d1c19;
-  --bg-color: linear-gradient(to top, #2a2a1e 40%, #1e3100);
+  --bg-color: radial-gradient(circle, #7b7232 0.1%, #1e1e1e 100%);
 }
 
 body.green {
   --card-title-border-color: #047c3f;
   --card-color-primary: #047c3f;
   --card-bg-color: #1a1f1b;
-  --bg-color: linear-gradient(to top, #1c2a26 40%, #103126);
-}
-
-ul {
-  list-style: none;
+  --bg-color: radial-gradient(circle, #02371c 0.1%, #1e1e1e 100%);
 }
 
 body {
@@ -35,6 +31,10 @@ body {
 
 body * {
   font-family: "Roboto", sans-serif;
+}
+
+ul {
+  list-style: none;
 }
 
 #app {
