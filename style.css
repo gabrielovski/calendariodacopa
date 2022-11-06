@@ -123,7 +123,7 @@ header img {
 .card ul {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 17px;
 
   width: 270px;
 }
@@ -180,8 +180,7 @@ a {
 footer {
   text-align: center;
   margin-top: 30px;
-  padding-top: 18px;
-  margin-bottom: 15px;
+  padding: 19px;
   color: #e1e1e6;
   border-top: 1px solid #e1e1e621;
 }
