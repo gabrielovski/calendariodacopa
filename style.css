@@ -94,6 +94,7 @@ header img {
   background: var(--card-bg-color);
   border-bottom: 2px solid var(--card-color-primary);
   border-radius: 6px;
+  opacity: 0;
 }
 
 .card h2 {
@@ -171,6 +172,20 @@ header img {
   animation: apeear 1.4s forwards;
 }
 
+a {
+  text-decoration: none;
+  color: var(--card-color-primary);
+}
+
+footer {
+  text-align: center;
+  margin-top: 30px;
+  padding-top: 18px;
+  margin-bottom: 15px;
+  color: #e1e1e6;
+  border-top: 1px solid #e1e1e621;
+}
+
 @keyframes apeear {
   0% {
     transform: translateY(-50px);
@@ -189,4 +204,26 @@ header img {
     flex-wrap: wrap;
     max-width: 1200px;
   }
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #1e1e1e;
+  opacity: 0%;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #2f2e2e;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #3e3c3c;
 }
