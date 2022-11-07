@@ -48,8 +48,9 @@ header {
   text-align: center;
 }
 
-header img {
+.logo-copa {
   width: 175px;
+  height: 175px;
   animation: apeear 1.6s forwards;
 }
 
