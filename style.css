@@ -110,7 +110,7 @@ header {
 
   width: fit-content;
   margin-inline: auto;
-  margin-bottom: 53px;
+  margin-bottom: 32px;
 
   color: #f7dd43;
 }
@@ -124,15 +124,38 @@ header {
 .card ul {
   display: flex;
   flex-direction: column;
-  gap: 17px;
+  gap: 18px;
 
   width: 270px;
 }
 
 .card ul li {
   display: flex;
+  flex-direction: column;
+}
+
+.card ul li .jogo {
+  display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.finalizado {
+  display: flex;
+
+  padding: 8px 16px;
+  border: 1px solid var(--card-title-border-color);
+  border-radius: 6px;
+
+  width: fit-content;
+  margin-inline: auto;
+  margin-bottom: 24px;
+}
+
+.finalizado h3 {
+  color: #e1e1e6;
+  font-size: 14px;
+  text-transform: uppercase;
 }
 
 .card ul li img {
@@ -154,6 +177,7 @@ header {
 }
 
 #botao:hover,
+.finalizado:hover,
 .nome-times h1:hover,
 .card h2:hover,
 .card ul li strong:hover,
@@ -162,6 +186,7 @@ header {
 }
 
 #botao,
+.finalizado,
 .nome-times h1,
 .card h2,
 .card ul li strong,
