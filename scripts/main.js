@@ -16,22 +16,6 @@ function createGame(player1, hour, player2) {
   `
 }
 
-document.getElementById("botao").onclick = function () {
-  var body = document.getElementsByTagName("body")[0]
-  var color = body.getAttribute("class")
-
-  if (color === "yellow") {
-    body.classList.remove("yellow")
-    body.classList.add("blue")
-  } else if (color === "blue") {
-    body.classList.remove("blue")
-    body.classList.add("green")
-  } else if (color === "green") {
-    body.classList.remove("green")
-    body.classList.add("yellow")
-  }
-}
-
 let delay = -0.15
 function createCard(date, day, games, finished) {
   delay = delay + 0.15
@@ -49,21 +33,28 @@ function createCard(date, day, games, finished) {
 }
 
 document.querySelector("#cards").innerHTML =
-  createCard("20/11", "domingo", createGame("catar", "0 x 2", "equador"), "finalizado") +
+  createCard(
+    "20/11",
+    "domingo",
+    createGame("catar", "0 x 2", "equador"),
+    "encerrado"
+  ) +
   createCard(
     "21/11",
     "segunda",
     createGame("inglaterra", "6 x 2", "irã") +
       createGame("senegal", "0 x 2", "holanda") +
-      createGame("estados unidos", "1 x 1", "país de gales"), "finalizados"
+      createGame("estados unidos", "1 x 1", "país de gales"),
+    "encerrados"
   ) +
   createCard(
     "22/11",
     "terça",
-    createGame("argentina", "07:00", "arábia saudita") +
-      createGame("dinamarca", "10:00", "tunísia") +
-      createGame("méxico", "13:00", "polônia") +
-      createGame("frança", "16:00", "austrália"), "próximos jogos"
+    createGame("argentina", "1 x 2", "arábia saudita") +
+      createGame("dinamarca", "0 x 0", "tunísia") +
+      createGame("méxico", "0 x 0", "polônia") +
+      createGame("frança", "4 x 1", "austrália"),
+    "encerrados"
   ) +
   createCard(
     "23/11",
@@ -71,7 +62,8 @@ document.querySelector("#cards").innerHTML =
     createGame("marrocos", "07:00", "croácia") +
       createGame("alemanha", "10:00", "japão") +
       createGame("espanha", "13:00", "costa rica") +
-      createGame("bélgica", "16:00", "canadá"), "próximos jogos"
+      createGame("bélgica", "16:00", "canadá"),
+    "próximos jogos"
   ) +
   createCard(
     "24/11",
@@ -79,7 +71,8 @@ document.querySelector("#cards").innerHTML =
     createGame("suíça", "07:00", "camarões") +
       createGame("uruguai", "10:00", "coreia do sul") +
       createGame("portugal", "13:00", "gana") +
-      createGame("brasil", "16:00", "sérvia"), "próximos jogos"
+      createGame("brasil", "16:00", "sérvia"),
+    "próximos jogos"
   ) +
   createCard(
     "25/11",
@@ -87,7 +80,8 @@ document.querySelector("#cards").innerHTML =
     createGame("país de gales", "07:00", "irã") +
       createGame("catar", "10:00", "senegal") +
       createGame("holanda", "13:00", "equador") +
-      createGame("inglaterra", "16:00", "estados unidos"), "próximos jogos"
+      createGame("inglaterra", "16:00", "estados unidos"),
+    "próximos jogos"
   ) +
   createCard(
     "26/11",
@@ -95,7 +89,8 @@ document.querySelector("#cards").innerHTML =
     createGame("tunísia", "07:00", "austrália") +
       createGame("polônia", "10:00", "arábia saudita") +
       createGame("frança", "13:00", "dinamarca") +
-      createGame("argentina", "16:00", "méxico"), "próximos jogos"
+      createGame("argentina", "16:00", "méxico"),
+    "próximos jogos"
   ) +
   createCard(
     "27/11",
@@ -103,7 +98,8 @@ document.querySelector("#cards").innerHTML =
     createGame("japão", "07:00", "costa rica") +
       createGame("bélgica", "10:00", "marrocos") +
       createGame("croácia", "13:00", "canadá") +
-      createGame("espanha", "16:00", "alemanha"), "próximos jogos"
+      createGame("espanha", "16:00", "alemanha"),
+    "próximos jogos"
   ) +
   createCard(
     "28/11",
@@ -111,7 +107,8 @@ document.querySelector("#cards").innerHTML =
     createGame("camarões", "07:00", "sérvia") +
       createGame("coreia do sul", "10:00", "gana") +
       createGame("brasil", "13:00", "suíça") +
-      createGame("portugal", "16:00", "uruguai"), "próximos jogos"
+      createGame("portugal", "16:00", "uruguai"),
+    "próximos jogos"
   ) +
   createCard(
     "29/11",
@@ -119,7 +116,8 @@ document.querySelector("#cards").innerHTML =
     createGame("equador", "12:00", "senegal") +
       createGame("holanda", "12:00", "catar") +
       createGame("irã", "16:00", "estados unidos") +
-      createGame("inglaterra", "16:00", "país de gales"), "próximos jogos"
+      createGame("inglaterra", "16:00", "país de gales"),
+    "próximos jogos"
   ) +
   createCard(
     "30/11",
@@ -127,7 +125,8 @@ document.querySelector("#cards").innerHTML =
     createGame("tunísia", "12:00", "frança") +
       createGame("austrália", "12:00", "dinamarca") +
       createGame("arábia saudita", "16:00", "méxico") +
-      createGame("polônia", "16:00", "argentina"), "próximos jogos"
+      createGame("polônia", "16:00", "argentina"),
+    "próximos jogos"
   ) +
   createCard(
     "01/12",
@@ -135,7 +134,8 @@ document.querySelector("#cards").innerHTML =
     createGame("croácia", "12:00", "bélgica") +
       createGame("marrocos", "12:00", "canadá") +
       createGame("costa rica", "16:00", "alemanha") +
-      createGame("japão", "16:00", "espanha"), "próximos jogos"
+      createGame("japão", "16:00", "espanha"),
+    "próximos jogos"
   ) +
   createCard(
     "02/12",
@@ -143,5 +143,6 @@ document.querySelector("#cards").innerHTML =
     createGame("coreia do sul", "12:00", "portugal") +
       createGame("gana", "12:00", "uruguai") +
       createGame("sérvia", "16:00", "suíça") +
-      createGame("camarões", "16:00", "brasil"), "próximos jogos"
+      createGame("camarões", "16:00", "brasil"),
+    "próximos jogos"
   )

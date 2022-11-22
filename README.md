@@ -1,7 +1,7 @@
 <h1 align="center">NLW Copa</h1>
 
 <p align="center">
-Projeto realizado durante a trilha Explorer do evento NLW Copa da Rocketseat onde durante o evento foi feito um projeto mais simples, porém modifiquei algumas coisas e adicionei todos os jogos da fase de grupos da Copa do Mundo de 2022.
+Projeto realizado durante a trilha Explorer do evento NLW Copa da Rocketseat onde durante o evento foi feito um projeto mais simples, porém modifiquei algumas coisas e adicionei todos os jogos da Copa do Mundo de 2022.
 </p>
 
 <p align="center">
@@ -31,7 +31,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 💻 Projeto
 
-O Calendário da Copa é um projeto que lista os jogos da Fase de Grupos da Copa do Mundo de 2022.
+O Calendário da Copa é um projeto que lista os jogos da Copa do Mundo de 2022.
 
 ## 🔖 Layout
 

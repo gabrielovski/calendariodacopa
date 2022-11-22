@@ -40,7 +40,7 @@ ul {
 #app {
   width: fit-content;
   margin: auto;
-  padding-top: 52px;
+  padding-top: 46px;
 }
 
 header {
@@ -54,20 +54,47 @@ header {
   animation: apeear 1.6s forwards;
 }
 
-.div-botao {
+.fases {
   display: flex;
   justify-content: center;
   margin-bottom: 40px;
   animation: apeear 1.6s forwards;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 15px;
 }
 
-#botao {
-  height: 45px;
-  width: 140px;
-  border-radius: 20px;
+.botoes-fases {
+  height: 35px;
+  width: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: #e1e1e6;
+
+  border-radius: 5px;
   border: none;
   cursor: pointer;
-  background-color: #fff;
+  background-color: #202024;
+  box-shadow: #00000033 0 3px 5px -1px, #00000024 0 6px 10px 0,
+    #0000001f 0 1px 18px 0;
+}
+
+.botao-selecionado {
+  height: 35px;
+  width: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: #e1e1e6;
+
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  background-color: #3e3e46;
   box-shadow: #00000033 0 3px 5px -1px, #00000024 0 6px 10px 0,
     #0000001f 0 1px 18px 0;
 }
@@ -88,7 +115,7 @@ header {
 }
 
 .card {
-  padding: 32px 23px;
+  padding: 23px 23px;
   text-align: center;
   height: fit-content;
 
@@ -153,7 +180,7 @@ header {
 }
 
 .finalizado h3 {
-  color: #e1e1e6;
+  color: #ff4141;
   font-size: 14px;
   text-transform: uppercase;
 }
@@ -176,7 +203,8 @@ header {
   color: #e1e1e6;
 }
 
-#botao:hover,
+.botao-selecionado:hover,
+.botoes-fases:hover,
 .finalizado:hover,
 .nome-times h1:hover,
 .card h2:hover,
@@ -185,7 +213,8 @@ header {
   transform: scale(1.1);
 }
 
-#botao,
+.botao-selecionado,
+.botoes-fases,
 .finalizado,
 .nome-times h1,
 .card h2,
@@ -228,6 +257,11 @@ footer {
     flex-direction: row;
     flex-wrap: wrap;
     max-width: 1200px;
+  }
+
+  .fases {
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 }
 
