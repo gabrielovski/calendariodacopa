@@ -122,11 +122,11 @@ document.querySelector("#cards").innerHTML =
   createCard(
     "30/11",
     "quarta",
-    createGame("tunísia", "12:00", "frança") +
-      createGame("austrália", "12:00", "dinamarca") +
-      createGame("arábia saudita", "16:00", "méxico") +
-      createGame("polônia", "16:00", "argentina"),
-    "próximos jogos"
+    createGame("tunísia", "1 x 0", "frança") +
+      createGame("austrália", "1 x 0", "dinamarca") +
+      createGame("arábia saudita", "1 x 2", "méxico") +
+      createGame("polônia", "0 x 2", "argentina"),
+    "encerrados"
   ) +
   createCard(
     "01/12",
