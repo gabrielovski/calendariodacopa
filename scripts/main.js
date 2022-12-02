@@ -135,14 +135,14 @@ document.querySelector("#cards").innerHTML =
       createGame("canadá", "1 x 2", "marrocos") +
       createGame("costa rica", "2 x 4", "alemanha") +
       createGame("japão", "2 x 1", "espanha"),
-    "próximos jogos"
+    "encerrados"
   ) +
   createCard(
     "02/12",
     "sexta",
-    createGame("coreia do sul", "12:00", "portugal") +
-      createGame("gana", "12:00", "uruguai") +
-      createGame("sérvia", "16:00", "suíça") +
-      createGame("camarões", "16:00", "brasil"),
-    "próximos jogos"
+    createGame("coreia do sul", "2 x 1", "portugal") +
+      createGame("gana", "0 x 2", "uruguai") +
+      createGame("sérvia", "2 x 3", "suíça") +
+      createGame("camarões", "1 x 0", "brasil"),
+    "encerrados"
   )
