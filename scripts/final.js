@@ -32,9 +32,16 @@ function createCard(date, day, games, finished) {
   `
 }
 
-document.querySelector("#cards").innerHTML = createCard(
-  "18/12",
-  "domingo",
-  createGame("a confirmar", "12:00", "a confirmar"),
-  "a confirmar"
-)
+document.querySelector("#cards").innerHTML =
+  createCard(
+    "17/12",
+    "sábado",
+    createGame("a confirmar", "12:00", "a confirmar"),
+    "disputa do 3º lugar"
+  ) +
+  createCard(
+    "18/12",
+    "domingo",
+    createGame("a confirmar", "12:00", "a confirmar"),
+    "final"
+  )
